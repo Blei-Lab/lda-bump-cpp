@@ -1,0 +1,6 @@
+CMake*
+Makefile
+*.cmake
+data/1k_dataset/
+driver
+results/

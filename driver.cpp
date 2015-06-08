@@ -21,8 +21,8 @@
 #include "docopt.h"
 #include "corpus.hpp"
 #include "util.hpp"
-#include "lda.hpp"
 
+#include "lda.hpp"
 #include "lda_coord_ascent.hpp"
 #include "lda_svi.hpp"
 #include "lda_bumping.hpp"
@@ -85,7 +85,7 @@ int main(int argc, const char** argv)
   Tee tee( std::cout, fileLOG );
   TeeStream both( tee );
 
-  both << "== This is driver.cpp ==" << std::endl << std::endl;
+  both << "== This is lda-bump-cpp/driver.cpp ==" << std::endl << std::endl;
   both << "The current local time is: " << time_string
        << std::endl << std::endl;
 

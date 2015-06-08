@@ -3,15 +3,15 @@ lda-bump-cpp
 
 Latent Dirichlet allocation (LDA) with bumping variational inference.
 
-[![](http://img.shields.io/badge/arXiv-1411.0292-brightgreen.svg?style=flat)](http://arxiv.org/abs/1411.0292) [![](http://img.shields.io/badge/license-GPLv2-red.svg?style=flat)](https://github.com/akucukelbir/lda-bump-cpp/blob/master/LICENSE)
+[![](http://img.shields.io/badge/license-GPLv2-red.svg?style=flat)](https://github.com/akucukelbir/lda-bump-cpp/blob/master/LICENSE)
 
 Implements three versions of LDA
 * Coordinate ascent (mean-field)
 * Stochastic variational inference (https://github.com/Blei-Lab/onlineldavb)
 * Bumping variational inference [1]
 
-[1] Alp Kucukelbir and David M Blei. _Profile predictive inference._ arXiv
-preprint arXiv:1411.0292, 2014.
+[1] Alp Kucukelbir and David M Blei. _Population Empirical Bayes._
+Uncertainty in Artificial Intelligence (UAI) 2015.
 
 
 Requirements
@@ -44,7 +44,7 @@ Example
 ```
 ./driver --topics=5
          --vocabulary=data/arxiv-vocab.dat
-         --datatr=data/arxiv-train-1k.dat
+         --datatr=data/arxiv-train-5k.dat
          --datatest=data/arxiv-test-1k.dat
 ```
 
